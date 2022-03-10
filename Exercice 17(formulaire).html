@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous contacter</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h2>Intercepte la validation du formulaire</h2>
+    <h3>Vos Coordonnées :</h3>
+    <p style="color: red;">*Ces zones sont obligatoires pour envoyer le formulaire.</p>
+    <form action="http://bienvu.net/script.php" name="formulaire" id="formulaire" method="post" novalidate>
+        <fieldset>
+            <label>Société :  <input type="text" id="societe" name="societe" required> *<br></label>
+            <label> Personne à contacter : <input type="text" id="Contact" name="Contact" required> * <br> </label>
+            <label>Adresse de l'entreprise : <input type="text" id="Entreprise" name="Adresse entreprise" >  <br></label>
+            <label>Code Postal : <input type="number" id="CP" name="CP" required> *<br></label>
+            <label>Ville :   <input type="text" id="Ville" name="Ville" required> *<br></label>
+            <label>E-mail : <input type="email" id="Email" name="Mail" required>* <br>        </label>
+            <label>Téléphone : <input type="tel" id="telephone" name="Tel"><br></label>
+            <label>Sélectionnez l'environnement technique du projet : <textarea id="type" name="Environnement technique"> </textarea>  <br></label>
+            <label> 
+                <select name="liste" id="selecteur">
+                    <nom>Choix</nom>
+                    <option value="Choisissez"disabled selected>Choisissez</option>
+                    <option value="Access">Access</option>
+                    <option value="Java">Java</option>
+                    <option value="Delphi">Delphi</option>
+                    <option value="Windev">Windev</option>
+                    <option value="Visual Basic">Visual Basic</option>
+                    <option value="Power Builder">Power Builder</option>
+                    <option value="Internet">Internet</option>
+                    <option value="Intranet">Intranet</option>
+                    <option value="Windows NT">Windows NT</option>
+                    <option value="Unix">Unix</option>
+                    <option value="SQL Server">SQL Server</option>
+                    <option value="Oracles">Oracles</option>
+                    <option value="Autres">Autres...</option>
+                </select> 
+            </label> <br>
+            <blockquote>
+                <blockquote>
+                    <blockquote> <button type="submit">Envoyer</button> <button type="reset">Effacer</button> </blockquote>
+                </blockquote>
+            </blockquote>
+
+            <!-- <input type="submit" > -->
+            <!-- Les boutons sont des input type submit ou alors juste des boutons ??? -->
+        </fieldset>
+    </form>
+    <script src="Javascript17.js"></script>
+
+</body>
+
+</html>

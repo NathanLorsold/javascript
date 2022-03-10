@@ -1,0 +1,57 @@
+/* On utilise balise de style"structure" ici car l'on a besoin d'ajouter un fond noir derrière le texte dans l'header et aussi modifier la largeur du fond noir grâce au padding.  */
+.structure{
+
+    background-color: black;
+    padding: 2px 20px;
+
+}
+
+/* balise de style pour positionner le texte â côté du logo */
+
+.structure2{
+    margin-left: 1000px;
+
+}
+
+    /* On utilise la balise "a" ici pour modifier la couleur */
+a{
+        color: white;
+    
+    }
+    
+/* La balise de style "colonnes" nous sert ici a mettre en horizontale les colonnes écrit dans le HTML  */
+.colonne{
+position: absolute;
+display: inline-block;
+padding-left: 1000px;
+width: 400px;
+right: 4px;
+text-transform: none;
+
+}
+
+/* balise de style qui s'occupe uniquement de la forme/style de la colonne */
+.box{
+display: inline-block;
+background: rgb(199, 193, 193);
+width: 500px;
+height: 430px;
+text-transform: none;
+/* display: none;  balise permettant de cacher des éléments avec CSS */
+}
+
+@media screen and (max-width: 576px) 
+{ 
+    h1 
+    { 
+        font-size : 20px; 
+    } 
+} 
+
+@media screen and (max-width: 768px) 
+{ 
+    h1 
+    { 
+        font-size : 40px; 
+    } 
+}

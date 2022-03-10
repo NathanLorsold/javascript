@@ -1,21 +1,27 @@
-var salutation = "Bonjour !";
-window.alert(salutation)
-var nombre = window.prompt("Saisissez un nombre");
+// ----------------------- Exercice ???
 
-if (nombre == 0)
+// if (nombre == 0)
+// {
+//     console.log("Le nombre :"+ nombre + " est positif");
+
+// }
+//     else if (nombre < 0)
+//     {
+//         console.log("Le nombre est négatif");
+//     }
+//     else (nombre > 0)
+//     {
+//         window.alert("Le nombre est positif" + "\n" + "le résultat est :" + nombre);
+//         console.log("Le nombre est positif" + "\n" + "le résultat est :" + nombre);
+//  }
+// ----------------------- Fin exercice ?? ----------------------- 
+
+// ----------------------- Exercice 1 Parité ------------------------------
+var btn3 = document.getElementById ("btn3");
+btn3.addEventListener ("click", clickbtn3);
+function clickbtn3 ()
 {
-    console.log("Le nombre :"+ nombre + " est positif");
-
-}
-    else if (nombre < 0)
-    {
-        console.log("Le nombre est négatif");
-    }
-    else (nombre > 0)
-    {
-        window.alert("Le nombre est positif" + "\n" + "le résultat est :" + nombre);
-        console.log("Le nombre est positif" + "\n" + "le résultat est :" + nombre);
- }
+var nombre = window.prompt("Saisissez un nombre");
 
 if (nombre % 2 == 0)
 {
@@ -27,6 +33,14 @@ else
     window.alert("Le nombre est impair");
     console.log("Le nombre est impair");
 }
+}
+// ----------------------- Fin exercice 1 ----------------------- 
+// ----------------------- Exercice 2 Age -----------------------
+var btn4 = document.getElementById ("btn4");
+btn4.addEventListener ("click", clickbtn4);
+function clickbtn4 ()
+{
+
 var annee = window.prompt("Saisissez votre date de naissance");
 annee = 2022 - annee;  
 window.alert("Vous avez"+ annee + "ans!");
@@ -38,34 +52,51 @@ else
 {
     window.alert("Vous êtes mineur!")
 }
+}
+// ----------------------- Fin exercice 2 ----------------------- 
+// ----------------------- Exercice 3 Calculette ------------------
+var btn5 = document.getElementById ("btn5");
+btn5.addEventListener ("click", clickbtn5);
+function clickbtn5()
+{
+
 var entier1 = window.prompt("Saisissez un nombre entier");
 var entier2 = window.prompt("Saisissez un second nombre entier");
 var operateur = window.prompt("Saisissez un opérateur");
 
-if (operateur = "+")
+if (operateur == "+")
 {
     window.alert(parseInt(entier1) + parseInt(entier2));
-    // L'addition dans la console ne fonctionne pas ??
-    console.log(parseInt(entier1) + (entier2));
+    console.log(parseInt(entier1) + parseInt(entier2));
 }
-else if (operateur = "-")
+if (operateur == "-")
 {
-    // La soustraction ne fonctionne pas dans les pop-up.
-    window.alert(entier1 - entier2);
-    // La soustraction fonctionne dans la console.
-    console.log(entier1 - entier2);
+    window.alert((entier1) - (entier2));
+    console.log((entier1) - (entier2));
 }
 
- else if(operateur = "*")
+if(operateur == "*")
 {
-    window.alert(parseInt(entier1) *= (entier2));
-    console.log(entier1 *= entier2);
+    window.alert(entier1 * entier2);
+    console.log(entier1 * entier2);
 }
-else if (operateur ="/")
+if(operateur == "/")
 {
-    window.alert(entier1 /= entier2);
+    window.alert(entier1 / entier2);
+    console.log(parseInt(entier1) / parseInt(entier2));
 }
-else
+else if  (entier2 == "0" && operateur == "/")
 {
+    alert("impossible de diviser par 0");
+}
+
+if (entier2 == "0")
+
+{
+    window.alert("Impossible de diviser par 0");
+}
+{
+    // window.alert("l'Opérateur saisit est incorrect !");
     console.log("L'opérateur saisit est incorect.");
+}
 }
